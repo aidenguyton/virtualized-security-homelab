@@ -41,7 +41,7 @@ Both servers point at 192.168.247.2 for gateway and DNS. DHCP hands out .100 thr
 
 ## Why host-only and not bridged
 
-Bridged would have dropped every VM straight onto my home network. No thanks.
+Bridged would have dropped every VM straight onto my home network.
 
 On VMnet2 the guests can't touch the physical LAN at all, so the only way out is through pfSense, which means there's one place to look when something breaks and one place to change when I want to see what a rule actually does.
 
